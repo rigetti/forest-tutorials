@@ -1,0 +1,15 @@
+include:
+  - project: rigetti/forest/gitlab-pipelines
+    file: docker.gitlab-ci.yml
+
+variables:
+  IMAGE: rigetti/forest-tutorials
+
+docker-branch:
+  extends: .docker-branch
+
+docker-edge:
+  extends: .docker-edge
+
+docker-stable:
+  extends: .docker-stable
