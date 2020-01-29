@@ -2,6 +2,9 @@ Interactive tutorial notebooks for pyQuil and Forest
 ====================================================
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder]
+[![pipeline status][gitlab-badge]][gitlab-project]
+[![github release][github-badge]][github-release]
+[![docker pulls][docker-badge]][docker-image]
 
 This is a Binder repository containing tutorial notebooks for learning about [pyQuil][pyquil] and
 the Forest SDK ([quilc][quilc] and the [QVM][qvm]). If you'd like to add a notebook, or change an
@@ -28,6 +31,12 @@ JupyterLab interface.
 
 [arxiv]: https://arxiv.org/abs/2001.04449
 [binder]: https://mybinder.org/v2/gh/rigetti/forest-tutorials/master?urlpath=lab/tree/Welcome.ipynb
+[docker-badge]: https://img.shields.io/docker/pulls/rigetti/forest-tutorials.svg
+[docker-image]: https://hub.docker.com/r/rigetti/forest-tutorials
+[github-badge]: https://img.shields.io/github/v/release/rigetti/forest-tutorials
+[github-release]: https://github.com/rigetti/forest-tutorials/releases
+[gitlab-badge]: https://gitlab.com/rigetti/forest/forest-tutorials/badges/master/pipeline.svg
+[gitlab-project]: https://gitlab.com/rigetti/forest/forest-tutorials/commits/master
 [pyquil]: https://github.com/rigetti/pyquil
 [qvm]: https://github.com/rigetti/qvm
 [quilc]: https://github.com/rigetti/quilc
