@@ -29,10 +29,23 @@ http://127.0.0.1:8888/?token=TOKEN
 Copy paste the above URL into your browser, replacing 8888 with `PORT`. This will bring up the
 JupyterLab interface.
 
+Building your own Forest-backed Binder repository
+-------------------------------------------------
+
+This Binder repository is built using the [`rigetti/forest-notebook`][forest-notebook] Docker
+image, which comes with [pyQuil][pyquil] installed, as well as [quilc][quilc] and [QVM][qvm]
+servers running in the background. It additionally has the [`forest-benchmarking`][benchmarking]
+library installed, along with some useful Python packages for data analysis and visualization.
+You can create your own Binder repository from this image by following the directions at the
+bottom of the README of the [rigetti/forest-notebook][forest-notebook-repo] repository!
+
 [arxiv]: https://arxiv.org/abs/2001.04449
+[benchmarking]: https://github.com/rigetti/forest-benchmarking
 [binder]: https://mybinder.org/v2/gh/rigetti/forest-tutorials/master?urlpath=lab/tree/Welcome.ipynb
 [docker-badge]: https://img.shields.io/docker/pulls/rigetti/forest-tutorials.svg
 [docker-image]: https://hub.docker.com/r/rigetti/forest-tutorials
+[forest-notebook]: https://hub.docker.com/r/rigetti/forest-notebook
+[forest-notebook-repo]: https://github.com/rigetti/forest-notebook
 [github-badge]: https://img.shields.io/github/v/release/rigetti/forest-tutorials
 [github-release]: https://github.com/rigetti/forest-tutorials/releases
 [gitlab-badge]: https://gitlab.com/rigetti/forest/forest-tutorials/badges/master/pipeline.svg
