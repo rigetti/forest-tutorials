@@ -2,7 +2,6 @@ Interactive tutorial notebooks for pyQuil and Forest
 ====================================================
 
 [![Binder](https://mybinder.org/badge_logo.svg)][binder]
-[![pipeline status][gitlab-badge]][gitlab-project]
 [![docker pulls][docker-badge]][docker-image]
 [![github release][github-badge]][github-release]
 
