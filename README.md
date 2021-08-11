@@ -37,28 +37,26 @@ for maybe [installing Docker][docker-docs]). However, if you'd like to run the n
 without Docker, or if you'd like to make a pull request and contribute your own tutorial, you'll
 have to set up a Python environment with the necessary requirements installed. Normally, these are
 defined in a `requirements.txt` file, but adding one to this repo would cause Binder to use that
-for its configuration instead of the `Dockerfile`. Thus, we provide the requirements for the
-tutorials as a convenient `extras_require` extension to pyQuil's [setup.py][pyquil-setup] file.
+for its configuration instead of the `Dockerfile`.
+
 Thus, run the following command in your Python environment to install all the necessary
 requirements:
 
 ```bash
-pip install "pyquil[tutorials]"
+pip install pyquil jupyterlab matplotlib pandas forest-benchmarking
 ```
 
 Then, assuming you've cloned this repository and you're in its top-level directory, running
-`jupyter notebook` should be all you need to get started!
+`jupyter lab` should be all you need to get started!
 
 Contributing your own tutorial notebook
 ---------------------------------------
 
 As mentioned above, if you'd like to contribute your own tutorial, or improve an existing one,
-you can make a pull request to this repository. The only caveat to this is that, if you add a
-notebook that depends on a third-party library that is not currently installed in the
+you can make a pull request to this repository. If you add a
+notebook that depends on a third-party library and is not currently installed in the
 [`rigetti/forest-notebook`][forest-notebook] Docker image (see the next section for more info),
-you will have to add the requirement to the `tutorials` entry of the `extras_require` section
-in pyQuil's [setup.py][pyquil-setup] file, and wait for the changes to take effect in the
-following release.
+you will have to add the requirement to this document.
 
 Building your own Forest-backed Binder repository
 -------------------------------------------------
@@ -84,5 +82,5 @@ bottom of the README of the [rigetti/forest-notebook][forest-notebook-repo] repo
 [gitlab-project]: https://gitlab.com/rigetti/forest/forest-tutorials/commits/master
 [pyquil]: https://github.com/rigetti/pyquil
 [pyquil-setup]: https://github.com/rigetti/pyquil/blob/master/setup.py
-[qvm]: https://github.com/rigetti/qvm
-[quilc]: https://github.com/rigetti/quilc
+[qvm]: https://github.com/quil-lang/qvm
+[quilc]: https://github.com/quil-lang/quilc
